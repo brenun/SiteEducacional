@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root {
+  --pink: #FF046F;
+  --violet: #C638FA;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: var(--pink);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 96%;
+  background: #fff;
+  position: fixed;
+  top: 2em; left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  z-index: 1000;
+  transition: .2s;
+}
+
+.header-active {
+  top: 0;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 0 .1em .3em rgba(0, 0, 0, .3);
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header .navbar ul li {
+  margin: 1em;
+}
+
+header .navbar ul li a {
+  font-size: 2em;
+  color: var(--pink);
+  transition: .2s;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+  color: var(--violet);
+}
+
+header .logo {
+  font-size: 2.5em;
+  color: var(--violet);
+  text-transform: uppercase;
+}
+
+header .logo i {
+  color: var(--pink);
+  padding: 0.2em;
+}
+
+header .fa-bars {
+  font-size: 3em;
+  color: var(--pink);
+  cursor: pointer;
+  display: none;
+  transition: .2s;
+}
+
+.inicio {
+  min-height: 100vh;
+  background: linear-gradient(rgba(198, 59, 250,.8),rgba(198, 59, 250,.8)), url(assets/img/school-supplies-3033204_1920.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.inicio .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-top: 14em;
+  padding-bottom: 8em;
+  text-align: center;
+}
+
+.inicio .content h1 {
+  font-size: 5em;
+  color: #fff;
+  padding: 0 1em;
+  text-shadow: 0 .3em .5em rgba(0, 0, 0, .3);
+  text-transform: uppercase;
+}
+
+.inicio .content p {
+  font-size: 2em;
+  color: #eee;
+  padding: 1em 25em;
+}
+
+.inicio .content button {
+  height: 4em;
+  width: 20em;
+  border-radius: 5em;
+  background: var(--pink);
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  transition: .2s;
+  border: none;
+  box-shadow: 0 .3em 1em rgba(0, 0, 0, .3);
+}
+
+.inicio .content button:hover {
+  letter-spacing: .2em;
+}
+
+.inicio .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inicio .box-container .box {
+  height: 20em;
+  width: 25em;
+  background: #fff;
+  text-align: center;
+  border-radius: 1em;
+  box-shadow: 0 .3em .5em rgba(0, 0, 0, .5);
+  margin: 2em;
+  cursor: pointer;
+}
+
+.inicio .box-container .box i {
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--violet);
+  font-size: 3em;
+  margin: 1em 0;
+  transition: .2s;
+}
+
+.inicio .box-container .box h3 {
+  font-size: 2em;
+  color: var(--pink);
+  transition: .2s;
+}
+
+.inicio .box-container .box p {
+  font-size: 1.3em;
+  padding: .7em 2em;
+  color: #666;
+}
+
+.inicio .box-container .box:hover i {
+  background: var(--pink);
+}
+
+.inicio .box-container .box:hover h3 {
+  color: var(--pink);
+}
+
+.inicio::before {
+  content: '';
+  position: absolute;
+  bottom: -25em; left: 50%;
+  transform: translateX(-50%);
+  border-top: 70vh solid #fff;
+  width: 120%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+
+
+
+header .fa-times {
+  transform: rotate(180deg);
+  color: var(--violet);
+}
+
+/* media queries */
+
+@media (max-width:768px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: -100em; left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 1em;
+    opacity: 0;
+    transition: -2 linear;
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2em 0;
+  }
+
+  header .navbar ul li {
+    margin: 1em 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar ul li a {
+    font-size: 3em;
+    display: block;
+  }
+
+  header .nav-toggle {
+    top: 5.5em;
+    opacity: 1;
+  }
+
+  .inicio .content p {
+    padding: 1.5em 2em;
+  }
+
+  .inicio::before {
+    display: none;
+  }
+}
