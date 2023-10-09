@@ -1,9 +1,8 @@
-# Meu Site Educacional ![image](https://github.com/brenun/SiteEducacional/assets/56694030/71f3b76c-6c65-4656-a620-62cb4d5a3ba3)
-
+# Meu Site Educacional 📖
 
 Bem-vindo ao repositório do meu site educacional! Este projeto visa proporcionar uma plataforma de aprendizado online para estudantes de todas as idades e níveis de conhecimento.
 
-## Visão Geral
+## Visão Geral 
 
 Este site educacional oferece os seguintes recursos:
 
@@ -11,7 +10,7 @@ Este site educacional oferece os seguintes recursos:
 - **Recursos Complementares**: Links e materiais de apoio para ampliar o aprendizado.
 - **Comunidade**: Fórum para discussões e interações entre os alunos.
 
-## Como Usar
+## Como Usar 
 
 Para começar a usar o site, siga estas etapas:
 
@@ -20,7 +19,7 @@ Para começar a usar o site, siga estas etapas:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
 
-## Navegue até o diretório do projeto:
+## Navegue até o diretório do projeto: 
 
  \ ```
  cd seu-repositorio
@@ -28,7 +27,7 @@ Para começar a usar o site, siga estas etapas:
 
 ## Abra o arquivo *index.html* em seu navegador.
 
-# Contribuições
+# Contribuições 🤝
 
 Contribuições são bem-vindas! Se você deseja melhorar este projeto, siga estas etapas:
 
@@ -51,7 +50,7 @@ git commit -m "Adicionei recursos de chat ao vivo"
 git push origin minha-branch
 \```
 
-# Tecnologias Utilizadas
+# Tecnologias Utilizadas 💻
 
 * HTML
 * CSS
