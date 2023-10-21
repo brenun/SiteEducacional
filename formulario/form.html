@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>Formulário</title>
+</head>
+<body>
+
+  <div class="box">
+    <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+<input type="file" name="file" id="file" />
+
+<div class="inputBox">
+  <form action="upload.php" method="post" enctype="multipart/form-data">
+    <!-- Outros elementos do formulário -->
+    <input type="submit" value="Enviar" name="submit" />
+  </form>
+
+</div>
+  </div>
+</body>
+</html>
